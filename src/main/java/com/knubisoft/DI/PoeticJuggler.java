@@ -1,10 +1,19 @@
-package com.knubisoft;
-
-import lombok.AllArgsConstructor;
+package com.knubisoft.DI;
 
 
 public class PoeticJuggler extends Juggler {
     private Poem poem;
+
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 
     public PoeticJuggler(Poem poem) {
         super();

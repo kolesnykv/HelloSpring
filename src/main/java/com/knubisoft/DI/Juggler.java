@@ -1,4 +1,4 @@
-package com.knubisoft;
+package com.knubisoft.DI;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
