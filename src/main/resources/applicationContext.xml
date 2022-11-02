@@ -20,18 +20,4 @@
         <constructor-arg ref="sonnet29"/>
         <property name="age" value="21"/>
     </bean>
-    <bean id="musicBean"
-          class="com.knubisoft.scope.ClassicalMusic"
-            init-method="doMyInit"
-            destroy-method="doMyDestroy">
-
-    </bean>
-
-    <bean id="musicPlayer"
-          class="com.knubisoft.scope.MusicPlayer"
-          scope="prototype">
-        <property name="music" ref="musicBean"/>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
 </beans>

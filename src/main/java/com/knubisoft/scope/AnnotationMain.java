@@ -6,8 +6,8 @@ public class AnnotationMain {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
-        Music music = applicationContext.getBean("rockMusic", Music.class);
-        System.out.println(music.getSong());
+        MusicPlayer player = applicationContext.getBean("musicPlayer", MusicPlayer.class);
+        player.playMusic();
 
     }
 }
