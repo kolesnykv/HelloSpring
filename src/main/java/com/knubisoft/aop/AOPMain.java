@@ -6,9 +6,12 @@ public class AOPMain {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
-        Library library = context.getBean("library", Library.class);
-        library.getBook();
-        library.getMagazine();
+        UniLibrary uniLibrary = context.getBean("uniLibrary", UniLibrary.class);
+        SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
+        uniLibrary.getBook();
+        uniLibrary.getMagazine();
+        schoolLibrary.getBook();
+        schoolLibrary.returnBook();
         context.close();
 
     }
